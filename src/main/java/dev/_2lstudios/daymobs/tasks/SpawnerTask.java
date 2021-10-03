@@ -57,7 +57,7 @@ public class SpawnerTask implements Runnable {
             return location;
         }
 
-        for (int y = -5; y < 5; y++) {
+        for (int y = 5; y > -5; y--) {
             final Location locationClone = location.clone().add(0, y, 0);
 
             if (isSafe(locationClone)) {
